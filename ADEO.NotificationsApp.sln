@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ADEO.NotificationsApp.Web", "ADEO.NotificationsApp\ADEO.NotificationsApp.Web.csproj", "{6714C9F4-FAF1-46C7-86DB-D9AC7CDFCBD5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ADEO.NotificationsApp.DAL", "ADEO.NotificationsApp.DAL\ADEO.NotificationsApp.DAL.csproj", "{09D5219E-1711-469A-B474-8FA1D9B19FAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6714C9F4-FAF1-46C7-86DB-D9AC7CDFCBD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6714C9F4-FAF1-46C7-86DB-D9AC7CDFCBD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6714C9F4-FAF1-46C7-86DB-D9AC7CDFCBD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6714C9F4-FAF1-46C7-86DB-D9AC7CDFCBD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09D5219E-1711-469A-B474-8FA1D9B19FAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09D5219E-1711-469A-B474-8FA1D9B19FAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09D5219E-1711-469A-B474-8FA1D9B19FAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09D5219E-1711-469A-B474-8FA1D9B19FAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B01095EF-EB41-4102-A9ED-32FF90377E37}
+	EndGlobalSection
+EndGlobal

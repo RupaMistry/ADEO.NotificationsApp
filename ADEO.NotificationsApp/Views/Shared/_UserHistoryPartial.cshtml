@@ -1,0 +1,35 @@
+﻿@model IReadOnlyList<UserMessage>
+
+<table style="width: 100%;" id="userHistoryList" class="table table-hover table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Message ID</th>
+            <th>Message Date</th>
+            <th>Message Content</th>
+            <th>Is Published?</th>
+            <th>Published Date</th>
+            <th>End Published Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var message in Model)
+        {
+            <tr>
+                <td id="txtID_@message.ID">@message.ID</td>
+                <td id="txtMsgDate_@message.ID">@message.MessageDate</td>
+                <td id="txtMsgContent_@message.ID">@message.Content</td>
+                <td>@message.IsPublished</td>
+                <td>@message.PublishedDate</td>
+                <td>@message.EndPublishedDate</td>
+                <td>
+                    <button class="copyRepublish mb-2 me-2 btn btn-success"
+                            messageID="@message.ID" type="button"
+                            data-bs-toggle="modal" data-bs-target=".bd-example-modal-lg">
+                        Copy & Republish
+                    </button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

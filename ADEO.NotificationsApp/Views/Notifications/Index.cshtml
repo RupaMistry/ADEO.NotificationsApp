@@ -1,0 +1,23 @@
+﻿@model NotificationsModel
+
+@{
+    ViewBag.PageTitle = "People Notifications Dashboard";
+}
+
+<div>
+    <ul class="body-tabs body-tabs-layout tabs-animated body-tabs-animated nav">
+        <li class="nav-item">
+            <a role="tab" class="nav-link active" id="tab-0" data-bs-toggle="tab" href="#tab-content-0">
+                <span> All Notification Messages</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a role="tab" class="nav-link" id="tab-1" data-bs-toggle="tab" href="#tab-content-1">
+                <span>Notifications History</span>
+            </a>
+        </li>
+    </ul>
+    @{ 
+        await Html.RenderPartialAsync("_NotificationTabsPartial", Model);
+    }
+</div> 
